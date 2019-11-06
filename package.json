@@ -1,0 +1,22 @@
+{
+  "name": "log-plugin",
+  "version": "1.0.0",
+  "description": "log for webpack.",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/q444937865/log-plugin.git"
+  },
+  "keywords": [
+    "webpack-log"
+  ],
+  "author": "zz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/q444937865/log-plugin/issues"
+  },
+  "homepage": "https://github.com/q444937865/log-plugin#readme"
+}
