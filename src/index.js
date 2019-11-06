@@ -11,6 +11,7 @@ class logPlugin {
     const { path } = this.options;
     let success = 0;
     let words = [];
+    let events = require('./event.json');
     compiler.hooks.entryOption.tap(pluginName, () => {
       if (path) {
         try {
@@ -31,14 +32,17 @@ class logPlugin {
     });
     compiler.hooks.done.tap(pluginName, compilation => {
       console.clear();
-      let word = '';
+      let word = '', event = '';
       if (path) {
         const random = ~~(Math.random() * words.length);
         const item = words[random];
         word = `\n\n     词：${item.word}  ${item.mean}  \n`;
       }
+      const random = ~~(Math.random() * events.length);
+      const item = events[random];
+      event = item.event;
       success += 1;
-      console.log(`  少女第${success}次讨到钱了！${word}`);
+      console.log(`  第${success}次${event}！${word}`);
     });
   }
 }
