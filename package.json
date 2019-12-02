@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/q444937865/log-plugin/issues"
   },
-  "homepage": "https://github.com/q444937865/log-plugin#readme"
+  "homepage": "https://github.com/q444937865/log-plugin#readme",
+  "devDependencies": {
+    "chalk": "^3.0.0"
+  }
 }
